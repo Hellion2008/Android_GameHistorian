@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstQuestionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_toolbar"
+        app:title="@string/app_title_toolbar"
+        tools:ignore="MissingConstraints" />
+
+
+    <RadioGroup
+        android:id="@+id/questionRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/question_background_color"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/questionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Question"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <RadioButton
+            android:id="@+id/firstVersionRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "first"
+            android:textSize="18dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/secondVersionRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "second"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:id="@+id/thirdVersionRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "third"
+            android:textSize="18dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/answerBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/answer_text_button"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/scoreTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество баллов"
+        android:paddingTop="36dp"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

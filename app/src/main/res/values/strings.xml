@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Android_GameHistorian</string>
+    <string name="answer_text_button">Ответить</string>
+    <string name="app_title_toolbar">Я историк</string>
+    <string name="exit_menu">Выход</string>
 </resources>
